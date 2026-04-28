@@ -39,7 +39,7 @@ export interface Product {
   featured: boolean;
 }
 
-export const PRODUCTS = [
+export const PRODUCTS: Product[] = [
   {
     id: 'p1',
     name: 'Sorrento',
@@ -54,6 +54,7 @@ export const PRODUCTS = [
       { size: '10ml', price: 60000, stock: 6 },
     ],
     scentType: ['citrus','fresh','spicy'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 3,
     description: 'Aroma citrus aquatic segar khas Mediterania.',
     stock: 20,
@@ -71,9 +72,11 @@ export const PRODUCTS = [
     size: '100ml',
     condition: '85% – Box Ada',
     scentType: ['citrus','fresh','spicy'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 3,
     description: 'Kondisi masih bagus, wangi segar.',
     stock: 1,
+    featured: false,
   },
   {
     id: 'p1_bnib',
@@ -85,9 +88,11 @@ export const PRODUCTS = [
     price: 350000,
     size: '100ml',
     scentType: ['citrus','fresh','spicy'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 3,
     description: 'Baru segel original.',
     stock: 3,
+    featured: false,
   },
 
   {
@@ -104,9 +109,11 @@ export const PRODUCTS = [
       { size: '10ml', price: 60000, stock: 6 },
     ],
     scentType: ['woody','fresh','fruity'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 4,
     description: 'Oriental woody yang dreamy dan elegan.',
     stock: 20,
+    featured: false,
   },
   {
     id: 'p2_pre',
@@ -120,9 +127,11 @@ export const PRODUCTS = [
     size: '100ml',
     condition: '90%',
     scentType: ['woody','fresh','fruity'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 4,
     description: 'Second, masih sangat layak pakai.',
     stock: 1,
+    featured: false,
   },
 
   {
@@ -139,9 +148,11 @@ export const PRODUCTS = [
       { size: '10ml', price: 60000, stock: 8 },
     ],
     scentType: ['fresh','citrus','fruity'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 4,
     description: 'Fresh clean vibes ala pantai California.',
     stock: 25,
+    featured: false,
   },
 
   {
@@ -158,9 +169,11 @@ export const PRODUCTS = [
       { size: '10ml', price: 60000, stock: 6 },
     ],
     scentType: ['fresh','citrus'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 2,
     description: 'Aroma laut bersih dan ringan.',
     stock: 20,
+    featured: false,
   },
 
   {
@@ -177,9 +190,11 @@ export const PRODUCTS = [
       { size: '10ml', price: 60000, stock: 6 },
     ],
     scentType: ['sweet','floral','fruity'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 3,
     description: 'Tropical sweet yang santai dan fun.',
     stock: 20,
+    featured: false,
   },
 
   {
@@ -196,9 +211,11 @@ export const PRODUCTS = [
       { size: '10ml', price: 60000, stock: 6 },
     ],
     scentType: ['woody','oriental'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 5,
     description: 'Bold dan menggoda.',
     stock: 20,
+    featured: false,
   },
 
   {
@@ -215,9 +232,11 @@ export const PRODUCTS = [
       { size: '10ml', price: 60000, stock: 6 },
     ],
     scentType: ['fresh','green'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 2,
     description: 'Fresh green aquatic unik.',
     stock: 20,
+    featured: false,
   },
 
   {
@@ -234,9 +253,11 @@ export const PRODUCTS = [
       { size: '10ml', price: 60000, stock: 6 },
     ],
     scentType: ['spicy','woody'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 4,
     description: 'Spicy warm dengan karakter kuat.',
     stock: 20,
+    featured: false,
   },
 
   // =========================
@@ -257,9 +278,11 @@ export const PRODUCTS = [
       { size: '10ml', price: 60000, stock: 10 },
     ],
     scentType: ['fresh','green','citrus'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 3,
     description: 'Fresh herbal minty.',
     stock: 318,
+    featured: false,
   },
   {
     id: 'p9_bnib',
@@ -271,9 +294,11 @@ export const PRODUCTS = [
     price: 300000,
     size: '100ml',
     scentType: ['fresh','green','citrus'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 3,
     description: 'Baru segel.',
     stock: 2,
+    featured: false,
   },
 
   {
@@ -290,9 +315,11 @@ export const PRODUCTS = [
       { size: '10ml', price: 60000, stock: 6 },
     ],
     scentType: ['citrus','sweet'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 3,
     description: 'Orange sweet fresh.',
     stock: 20,
+    featured: false,
   },
 
   {
@@ -309,9 +336,11 @@ export const PRODUCTS = [
       { size: '10ml', price: 60000, stock: 6 },
     ],
     scentType: ['fresh','powdery'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 2,
     description: 'Clean laundry vibes.',
     stock: 20,
+    featured: false,
   },
 
   {
@@ -328,8 +357,10 @@ export const PRODUCTS = [
       { size: '10ml', price: 60000, stock: 6 },
     ],
     scentType: ['green','fresh'],
+    notes: { top: [], middle: [], base: [] },
     intensity: 2,
     description: 'Tea fresh calming.',
     stock: 20,
+    featured: false,
   },
 ];
