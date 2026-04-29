@@ -9,7 +9,7 @@ import { CheckoutPage } from './pages/CheckoutPage';
 import { QuizPage } from './pages/QuizPage';
 import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
-import { AdminLoginPage } from './pages/admin/AdminLoginPage';
+// import { AdminLoginPage } from './pages/admin/AdminLoginPage';
 import { AdminDashboard } from './pages/admin/AdminDashboard';
 import { AdminProducts } from './pages/admin/AdminProducts';
 import { AdminBrands } from './pages/admin/AdminBrands';
@@ -41,7 +41,7 @@ export const router = createBrowserRouter([
     Component: AdminLayout,
     children: [
       { index: true, Component: AdminDashboard },
-      { path: 'login', Component: AdminLoginPage },
+      // { path: 'login', Component: AdminLoginPage },
       { path: 'products', Component: AdminProducts },
       { path: 'brands', Component: AdminBrands },
       { path: 'orders', Component: AdminOrders },
