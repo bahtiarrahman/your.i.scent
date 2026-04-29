@@ -32,13 +32,13 @@ function loadProducts(): Product[] {
         // Kalau stored notes kosong tapi fresh punya notes, ambil dari fresh
         const hasEmptyNotes = !stored.notes ||
           (stored.notes.top.length === 0 &&
-           stored.notes.middle.length === 0 &&
-           stored.notes.base.length === 0);
+          stored.notes.middle.length === 0 &&
+          stored.notes.base.length === 0);
 
         const freshHasNotes = fresh.notes &&
           (fresh.notes.top.length > 0 ||
-           fresh.notes.middle.length > 0 ||
-           fresh.notes.base.length > 0);
+          fresh.notes.middle.length > 0 ||
+          fresh.notes.base.length > 0);
 
         if (hasEmptyNotes && freshHasNotes) {
           return { ...stored, notes: fresh.notes };
