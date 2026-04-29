@@ -9,13 +9,13 @@ import { CheckoutPage } from './pages/CheckoutPage';
 import { QuizPage } from './pages/QuizPage';
 import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
-// import { AdminLoginPage } from './pages/admin/AdminLoginPage';
+// import { AdminLoginPage } from './pages/admin/AdminLoginPage'; // ← TIDAK DIPAKAI
 import { AdminDashboard } from './pages/admin/AdminDashboard';
 import { AdminProducts } from './pages/admin/AdminProducts';
 import { AdminBrands } from './pages/admin/AdminBrands';
 import { AdminOrders } from './pages/admin/AdminOrders';
 import { AdminPayments } from './pages/admin/AdminPayments';
-import { AdminRekap } from './pages/admin/AdminRekap';
+// import { AdminRekap } from './pages/admin/AdminRekap'; // ← TIDAK DIPAKAI
 import { AdminQuizSettings } from './pages/admin/quiz/AdminQuizSettings';
 import { DesignSystemPage } from './pages/DesignSystemPage';
 
