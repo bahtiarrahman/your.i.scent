@@ -54,7 +54,7 @@ export const PRODUCTS: Product[] = [
       { size: '10ml', price: 60000, stock: 6 },
     ],
     scentType: ['citrus','fresh','spicy'],
-    notes: { top: [], middle: [], base: [] },
+    notes: { top: ['Fizzy Grapefruit, Bergamot, Mandarin Orange, Magnolia, Ginger'], middle: ['Fizzy Grapefruit, Neroli, Ginger, Powdery Notes, Water Notes'], base: [' Fizzy Grapefruit, Amber, Musk, Cedar, Patchouli, Orris Root'] },
     intensity: 3,
     description: 'Aroma citrus aquatic segar khas Mediterania.',
     stock: 20,
