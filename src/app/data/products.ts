@@ -131,7 +131,7 @@ export const PRODUCTS: Product[] = [
     intensity: 4,
     description: 'Second, masih sangat layak pakai.',
     stock: 1,
-    featured: false,
+    featured: true,
   },
 
   {
@@ -282,7 +282,7 @@ export const PRODUCTS: Product[] = [
     intensity: 3,
     description: 'Fresh herbal minty.',
     stock: 318,
-    featured: false,
+    featured: true,
   },
   {
     id: 'p9_bnib',
