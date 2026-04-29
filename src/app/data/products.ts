@@ -58,7 +58,7 @@ export const PRODUCTS: Product[] = [
       top: ['Fizzy Grapefruit', 'Bergamot', 'Mandarin Orange', 'Magnolia', 'Ginger'],
       middle: ['Neroli', 'Ginger', 'Powdery Notes', 'Water Notes'],
       base: ['Amber', 'Musk', 'Cedar', 'Patchouli', 'Orris Root']
-    },    
+    },
     intensity: 3,
     description: 'Aroma citrus aquatic segar khas Mediterania.',
     stock: 20,
@@ -135,7 +135,7 @@ export const PRODUCTS: Product[] = [
     intensity: 4,
     description: 'Second, masih sangat layak pakai.',
     stock: 1,
-    featured: true,
+    featured: false,
   },
 
   {
@@ -286,7 +286,7 @@ export const PRODUCTS: Product[] = [
     intensity: 3,
     description: 'Fresh herbal minty.',
     stock: 318,
-    featured: true,
+    featured: false,
   },
   {
     id: 'p9_bnib',
