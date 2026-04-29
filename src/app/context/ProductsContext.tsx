@@ -11,7 +11,7 @@ interface ProductsContextType {
 
 const ProductsContext = createContext<ProductsContextType | undefined>(undefined);
 
-const STORAGE_KEY = 'youri_products_v1';
+const STORAGE_KEY = 'youri_products_v2';
 
 function loadProducts(): Product[] {
   try {
@@ -19,10 +19,35 @@ function loadProducts(): Product[] {
     if (stored) {
       const parsed = JSON.parse(stored);
       // MIGRATION: convert old scentType (string) to new format (array)
-      return parsed.map((p: any) => ({
+      const migrated = parsed.map((p: any) => ({
         ...p,
         scentType: Array.isArray(p.scentType) ? p.scentType : [p.scentType]
       }));
+
+      // AUTO-FIX: merge notes from PRODUCTS if localStorage has empty notes
+      const fixed = migrated.map((stored: Product) => {
+        const fresh = PRODUCTS.find(p => p.id === stored.id);
+        if (!fresh) return stored;
+
+        // Kalau stored notes kosong tapi fresh punya notes, ambil dari fresh
+        const hasEmptyNotes = !stored.notes ||
+          (stored.notes.top.length === 0 &&
+           stored.notes.middle.length === 0 &&
+           stored.notes.base.length === 0);
+
+        const freshHasNotes = fresh.notes &&
+          (fresh.notes.top.length > 0 ||
+           fresh.notes.middle.length > 0 ||
+           fresh.notes.base.length > 0);
+
+        if (hasEmptyNotes && freshHasNotes) {
+          return { ...stored, notes: fresh.notes };
+        }
+
+        return stored;
+      });
+
+      return fixed;
     }
   } catch {}
   return PRODUCTS;
