@@ -70,10 +70,6 @@ export function AdminLoginPage() {
             Masuk
           </button>
         </form>
-
-        <div className="mt-4 text-center text-xs text-[#5C5247]">
-          Hint: password = <span className="font-mono text-[#8B7D72]">admin123</span>
-        </div>
       </div>
 
       <Link to="/" className="mt-6 text-xs text-[#5C5247] hover:text-[#8B7D72] transition-colors">
