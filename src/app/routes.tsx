@@ -41,12 +41,12 @@ export const router = createBrowserRouter([
     Component: AdminLayout,
     children: [
       { index: true, Component: AdminDashboard },
-      // { path: 'login', Component: AdminLoginPage },
+      // { path: 'login', Component: AdminLoginPage }, // ← LOGIN DIMATIKAN
       { path: 'products', Component: AdminProducts },
       { path: 'brands', Component: AdminBrands },
       { path: 'orders', Component: AdminOrders },
       { path: 'payments', Component: AdminPayments },
-      { path: 'rekap',         Component: AdminRekap },
+      // { path: 'rekap', Component: AdminRekap }, // ← REKAP DIMATIKAN
       { path: 'quiz-settings', Component: AdminQuizSettings },
     ],
   },
