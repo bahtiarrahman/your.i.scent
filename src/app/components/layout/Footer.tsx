@@ -57,7 +57,7 @@ export function Footer() {
                 { to: '/about', label: 'Tentang Kami' },
                 { to: '/contact', label: 'Hubungi Kami' },
                 { to: '/about#how', label: 'Cara Pemesanan' },
-                { to: '/admin', label: 'Admin Panel' },
+                { to: '/admin/login', label: 'Admin Panel' },
               ].map(link => (
                 <li key={link.to}>
                   <Link to={link.to} className="text-sm text-[#8B7D72] hover:text-[#C9A96E] transition-colors" style={{ fontFamily: "'Inter', sans-serif" }}>

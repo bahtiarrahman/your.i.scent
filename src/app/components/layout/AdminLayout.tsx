@@ -9,10 +9,9 @@ export function AdminLayout() {
   const navigate = useNavigate();
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  // ─── LOGIN DIMATIKAN SEMENTARA ───
-  // if (!admin.isLoggedIn && location.pathname !== '/admin/login') {
-  //   return <Navigate to="/admin/login" replace />;
-  // }
+  if (!admin.isLoggedIn && location.pathname !== '/admin/login') {
+    return <Navigate to="/admin/login" replace />;
+  }
 
   const navItems = [
     { to: '/admin',               icon: LayoutDashboard, label: 'Dashboard',       exact: true },
@@ -20,7 +19,7 @@ export function AdminLayout() {
     { to: '/admin/brands',        icon: Tag,             label: 'Brand'                        },
     { to: '/admin/orders',        icon: ClipboardList,   label: 'Pesanan'                      },
     { to: '/admin/payments',      icon: CreditCard,      label: 'Pembayaran'                   },
-    // { to: '/admin/rekap',         icon: BarChart2,       label: 'Rekap Penjualan'              }, // ← DIMATIKAN SEMENTARA
+    { to: '/admin/rekap',         icon: BarChart2,       label: 'Rekap Penjualan'              },
     { to: '/admin/quiz-settings', icon: FlaskConical,    label: 'Pengaturan Quiz'              },
   ];
 
@@ -29,10 +28,9 @@ export function AdminLayout() {
     navigate('/admin/login');
   };
 
-  // ─── LOGIN PAGE CHECK DIMATIKAN ───
-  // if (location.pathname === '/admin/login') {
-  //   return <Outlet />;
-  // }
+  if (location.pathname === '/admin/login') {
+    return <Outlet />;
+  }
 
   return (
     <div className="min-h-screen bg-[#F5F0E8] flex" style={{ fontFamily: "'Inter', sans-serif" }}>
@@ -81,17 +79,16 @@ export function AdminLayout() {
 
         {/* Bottom */}
         <div className="px-3 py-4 border-t border-[#3C3327]">
-          {/* ─── LOGOUT DIMATIKAN SEMENTARA ─── */}
-          {/* <button
+          <button
             onClick={handleLogout}
             className="flex items-center gap-3 px-3 py-2.5 w-full rounded-lg text-sm text-[#8B7D72] hover:bg-[#3C3327] hover:text-[#E0D8CC] transition-all"
           >
             <LogOut size={17} />
             Keluar
-          </button> */}
+          </button>
           <Link
             to="/"
-            className="flex items-center gap-3 px-3 py-2.5 w-full rounded-lg text-sm text-[#8B7D72] hover:bg-[#3C3327] hover:text-[#E0D8CC] transition-all"
+            className="flex items-center gap-3 px-3 py-2.5 mt-1 w-full rounded-lg text-sm text-[#8B7D72] hover:bg-[#3C3327] hover:text-[#E0D8CC] transition-all"
           >
             <ChevronRight size={17} />
             Ke Toko
