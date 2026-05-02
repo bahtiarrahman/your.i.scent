@@ -1,0 +1,18 @@
+FOLDER INI UNTUK FOTO PRODUK your.i scent
+==========================================
+
+Cara pakai:
+1. Taruh foto produk kamu di folder ini (jpg, png, webp)
+   Contoh: sauvage-dior.jpg
+
+2. Di Admin Panel → Kelola Produk → Tambah/Edit Produk
+   → Pilih tab "Folder Lokal"
+   → Ketik nama file: sauvage-dior.jpg
+   → Otomatis jadi path: /products/sauvage-dior.jpg
+
+Tips penamaan file:
+- Gunakan huruf kecil semua
+- Ganti spasi dengan tanda hubung (-)
+- Contoh: oud-wood-tomford.jpg, sauvage-dior-edp.jpg
+
+Foto akan langsung muncul di halaman produk dan tidak hilang saat refresh.
